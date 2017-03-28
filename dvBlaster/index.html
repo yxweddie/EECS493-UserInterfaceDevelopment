@@ -1,0 +1,73 @@
+<html>
+
+<title>Div Blaster</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/gup.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+
+    <div class='game-window' >
+      <div class = 'game-splash' style="text-align:center; color : white; position:absolute; left:35px;">
+        <h1 style = "color:#CCFF99;font-weight: bold;">Div Blaster</h1>
+        <h2>created by Yixiang Wu</h2>
+        </br>
+        </br>
+        <p>
+          Space : Fire a Rocket </br>
+          Arrow Key (&#x2191; &#x2193; &#x2190; &#x2192;): Move the Ship
+        </p>
+        </br>
+        </br>
+        <button id = "start-bt">Star Div Blaster</button>
+      </div>
+      <div id = "life" style="display:none;z-index:10;position:absolute; margin-top:20px;margin-left:280px;">
+      </div>
+      <div id='enterprise' class='ship'>
+        <img class='ship-avatar' src='img/fighter.png' height='50px'/>
+        <img class='ship_shield' src='img/shield.png' height='60px' width="60px" style="display:none; z-index:100;position:absolute;top:0px;"/>
+      </div>
+    </div>
+
+    <div class='game-over' style="display: none; text-align:center; color:white;">
+      <h1 style = "color:#CCFF99;font-weight: bold;">GAME OVER!</h1>
+      <p>
+        Your Score : <span id = "game_over_score"></span>
+      </br>
+      </br>
+      </br>
+      <button id = "gobackBt">Go Back</button>
+
+      </p>
+    </div>
+
+    <div class='status-window' style='text-align: center'>
+      <h3>Welcome!</h3>
+      <hr>
+      <br>
+      <p>score:</p>
+      <h1 id='score-box'>0</h1>
+      <p>rate:</p>
+      <h1 id='rate-box'>0%</h1>
+      <button id = "setting-panel-bt">Open Setting Panel</button>
+
+      <div id = "setting-panel" style="display:none;text-align:center;">
+        <p>
+          Asteroid Spawning Rate </br>(# per second)</br></br>
+          <input id = "asteroid-spawning-rate" placeholder = "Min. 0.2 Max. 4.0"></input></br></br>
+          <label>Mute Audio<input type="checkbox" id="mute-audio-check-box" checked ></label></br></br>
+          <button id = "update-bt" style = "float-right">UPDATE</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
