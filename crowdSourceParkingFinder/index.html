@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <title>Parking Finder</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=false&libraries=visualization,places"></script>
+    
+    <script src="app.js"></script>
+    <script src="js/infobox.js"></script>
+    <script src="js/gps_script.js"></script>
+    <script src="js/leaderboard_script.js"></script>
+    <script src="js/profile_script.js"></script>
+    <script src="js/settings_script.js"></script>
+    <script src="js/survey_script.js"></script>
+    
+</head> 
+
+<body ng-app="myApp">
+    <div class="container_size container_boarder">
+        <h1 id="splash_text" style="text-align: center;">Please remember to rate each lot you visit! Your responses power this application! Thank you!</h1>
+        <div ng-view style="height:93.5%;"></div>
+        <nav id="app_nav" class="banner navbar navbar-inverse navbar-fixed-bottom" style="height: 6.5%">
+            <div class="container-fluid" style="float: none;">
+                <ul class="nav navbar-nav"  style="float: none; vertical-align: top; font-size: 25px;">
+                    <li>
+                        <a href="#/GPS">
+                            <span class="fa fa-map"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/Survey">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/Leaderboard">
+                            <span class="fa fa-trophy"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/Profile">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/Settings">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>

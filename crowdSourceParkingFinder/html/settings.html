@@ -1,0 +1,70 @@
+<h1 style="text-align: center;">Settings</h1>
+
+<center ng-controller="settings_con" style="position: absolute; width: 80vw; left: 10vw;">
+    <button type="button" class="btn btn-lg btn-default" style="display: block; margin-bottom: 0.5em; width: 200px" data-toggle="modal" data-target="#aboutModal">About</button>
+    <button type="button" class="btn btn-lg btn-default" style="display: block; margin-bottom: 0.5em; width: 200px" data-toggle="modal" data-target="#feedbackModal">Feedback</button>
+    <button type="button" class="btn btn-lg btn-default" style="display: block; margin-bottom: 0.5em; width: 200px" data-toggle="modal" data-target="#helpModal">Help</button>
+
+    <div id="aboutModal" class="modal fade" role="dialog" style="text-align: left">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    Parking Finder was created by Nick Cook, Kaleb Pifer, Josh Spigelman, Nick Willer, Yixiang Wu, and Penghua Zhao. Its design was meticulously handcrafted over weeks and weeks to provide you, the user, the best experience possible.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal fade" role="dialog" style="text-align: left">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Submit Feedback</h4>
+                </div>
+                <div class="modal-body">
+                    <p>We'd love to hear your feedback! Send us a message here and provide your email address if you'd like us to follow up with you.</p>
+                    <div class="form-group">
+                        <label for="feedback-email" class="col-sm-3" style="padding-top: 7px">Email address</label>
+                        <input id="feedback-email" type="email" class="form-control" style="width: 72%" />
+                    </div>
+                    <textarea class="form-control" placeholder="Send us a message here"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="helpModal" class="modal fade" role="dialog" style="text-align: left">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">What do you need help with?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please provide your email address and a brief description of your question and we'll get back to you shortly.</p>
+                    <div class="form-group">
+                        <label for="feedback-email" class="col-sm-3" style="padding-top: 7px">Email address</label>
+                        <input id="feedback-email" placeholder="What do you need help with?" type="email" class="form-control" style="width: 72%" />
+                    </div>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>

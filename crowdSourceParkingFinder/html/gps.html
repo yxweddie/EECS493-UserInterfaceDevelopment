@@ -1,0 +1,10 @@
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div id="map" style = "height:100%; width:100%"></div>
+
+<!-- Call up when we reach the destination -->
+<div class="survey" style="display: none;" ng-controller="gps_con">
+    <h1>How's the parking lot?</h1>
+    <button id="lots" class="btn btn-success btn-lg" ng-click="selectEmpty()">Almost Empty!</button><br>
+    <button id="some" class="btn btn-warning btn-lg" ng-click="selectHalfway()">Halfway Filled</button><br>
+    <button id="none" class="btn btn-danger btn-lg" ng-click="selectFilled()">Practically Full!</button>
+</div> 

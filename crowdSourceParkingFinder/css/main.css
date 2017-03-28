@@ -1,0 +1,265 @@
+/* General */
+
+html, body
+{
+    margin: 0;
+    height: 100%;
+}
+
+#app_nav
+{
+    display: inline-block;
+    float: none;
+    text-align: center;
+}
+
+#app_nav li
+{
+    width: 20%;
+    float: left;
+}
+
+/* GPS */
+
+.container_size
+{
+    margin: auto;
+}
+
+.container_boarder
+{
+    height:100vh;
+    border: 1px solid #0e2f36;
+}
+
+#pac-input 
+{
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    margin-top: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 20em;
+}
+
+#pac-input:focus 
+{
+    border-color: #4d90fe;
+}
+
+.info-windows{opacity:0.9}
+.menu {width:191px; height:191px; position:relative; background:url(../img/menu.png) no-repeat; list-style:none; padding:0; margin:0;}
+.menu li {position:absolute}
+.menu li a {width:100%; height:100%; overflow:hidden; float:left; *zoom:1; position:relative; text-indent:-999px}
+.menu .item-1 {width:126px; height:66px; left:33px; top:5px}
+.menu .item-2 {width:68px; height:126px; right:5px; top:31px}
+.menu .item-3 {width:131px; height:70px; left:30px; bottom:6px}
+.menu .item-4 {width:67px; height:128px; left:6px; top:30px}
+.menu .item-5 {width:67px; height:67px; left:63px; top:60px}
+.menu .item-1 a {background:url(../img/1.png) 0 -999px no-repeat}
+.menu .item-2 a {background:url(../img/2.png) 0 -999px no-repeat}
+.menu .item-3 a {background:url(../img/3.png) 0 -999px no-repeat}
+.menu .item-4 a {background:url(../img/4.png) 0 -999px no-repeat}
+.menu .item-5 a {background:none}
+.menu li a:hover, .menu .active a {background-position:0 0}
+
+/* Survey */
+
+.survey {
+    text-align: center;
+    color:black;
+    
+    background-color: #f0ede4;
+        
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+
+    max-width: 400px;
+    width: 60vw;
+
+    position:absolute;
+    left:30vw;
+    top:10vh;
+
+    z-index: 2;
+}
+
+.survey button {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    font-size: 2em;
+    width: 8em;
+}
+
+/* Extended Survey */
+.extend_survey {
+    background-color:#f0ede4; 
+
+    font-size: .9em; 
+
+    position:absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+
+    overflow-y:scroll; 
+}
+
+/* Leaderboard */
+
+.leaderboard_row
+{
+    overflow: auto;
+    border: .5em solid #9fa395;
+    border-radius: .8em;
+    background-color: #9fa395;
+    margin: 1em 1em;
+}
+
+.leaderboard_row div
+{
+    display: inline-block;
+    font-size: 1.3em;
+    float: left;
+}
+
+.locale_button
+{
+    width: 30%; 
+    background-color: #cbe699;
+}
+
+.leaderboard_img
+{
+    float: right;
+    height: 2.2em;
+    width: 2.2em;
+}
+
+#leaderboard_div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    background: #f0ede4;
+}
+
+#locale_picker
+{
+    float: none;
+    text-align: center;
+    margin: 0px;
+    background: #f0ede4;
+}
+
+#locale_buttons
+{
+    float: none;
+    margin: .5em .6em .5em;
+    padding: 0px
+}
+
+#btn_global, #btn_country, #btn_local
+{
+    font-size: 1.2em;
+}
+
+#division
+{
+    margin: 0px;
+    background-color: black;
+    border-color: black;
+}
+
+/* Profile */
+
+center
+{
+    padding: 0em 2em;
+}
+
+.modal_img
+{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    height: 5em;
+    width: 5em;
+}
+
+.row2
+{
+    color: black;
+    border: .5em solid #9fa395;
+    border-radius: .8em;
+    background-color: #9fa395;
+    margin: 1em 1em;
+}
+
+.row2 div
+{
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.row3
+{
+    color: black;
+    border: .5em solid #cbe699;
+    border-radius: .8em;
+    background-color: #cbe699;
+    margin: 1em 1em;
+}
+
+.profile_button
+{
+    margin: 1em;
+}
+
+#profile_pic
+{
+    padding-top: 50px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+/* Settings */
+
+.setting_selector
+{
+    border: 2px solid black;
+    border-radius: 1em;
+    position: relative;
+    margin: 1em 0em;
+}
+
+.setting_selector:hover
+{
+    background: #9fa395;
+}
+
+.setting_selector h3
+{
+    margin: 10px 10px;
+}
+
+.setting_arrow
+{
+    position: absolute; 
+    right: 0; 
+    display: inline-block; 
+}

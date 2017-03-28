@@ -1,0 +1,21 @@
+<script src="./js/leaderboard_script.js"></script>
+
+<div id="leaderboard" ng-controller="leaderboard_con">
+    <nav id="locale_picker" class="navbar navbar-default">
+        <div id="locale_buttons">
+            <button id="btn_global" class="btn navbar-btn locale_button" ng-click="getGlobal()">Global</button>
+            <button id="btn_country" class="btn navbar-btn locale_button" ng-click="getCountry()">Country</button>
+            <button id="btn_local" class="btn navbar-btn locale_button" ng-click="getLocal()">Local</button>
+        </div>
+        <hr id="division"/>
+    </nav>
+    
+    <div id="leaderboard_container" style="position: relative;">
+        <div id="leaderboard_div">
+            <div class="leaderboard_row" ng-repeat="profile in rankings">
+                <div>#{{ profile.rank }} - {{ profile.name }}</div>
+                <img class="leaderboard_img" ng-src="{{ profile.pic == 'blank' ? './profile_icons/ni.png' : profile.pic }}"/>
+            </div>
+        </div>
+    </div>
+</div>

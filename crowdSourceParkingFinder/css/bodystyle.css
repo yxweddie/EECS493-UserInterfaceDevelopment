@@ -1,0 +1,46 @@
+body{
+  background-color: #B2C5C9;
+  height:100%;
+}
+
+.container_size{
+  max-width: 600px;
+  margin: auto;
+}
+
+.container_boarder{
+  height:100vh;
+  border: 1px solid #0e2f36;
+}
+
+#pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+
+.info-windows{opacity:0.9}
+.menu {width:191px; height:191px; position:relative; background:url(/img/menu.png) no-repeat; list-style:none; padding:0; margin:0}
+.menu li {position:absolute}
+.menu li a {width:100%; height:100%; overflow:hidden; float:left; *zoom:1; position:relative; text-indent:-999px}
+.menu .item-1 {width:126px; height:66px; left:33px; top:5px}
+.menu .item-2 {width:68px; height:126px; right:5px; top:31px}
+.menu .item-3 {width:131px; height:70px; left:30px; bottom:6px}
+.menu .item-4 {width:67px; height:128px; left:6px; top:30px}
+.menu .item-5 {width:67px; height:67px; left:63px; top:60px}
+.menu .item-1 a {background:none}
+.menu .item-2 a {background:url(/img/2.png) 0 -999px no-repeat}
+.menu .item-3 a {background:none}
+.menu .item-4 a {background:url(/img/4.png) 0 -999px no-repeat}
+.menu .item-5 a {background:none}
+.menu li a:hover, .menu .active a {background-position:0 0}
