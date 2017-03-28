@@ -6,8 +6,8 @@ following functionality:
 - "Fire-able rockets" that can destroy asteroids they collide with
 - Asteroids that can be "spawned" based on user input, and fall vertically
 - Score tracking
- -- Single-session scoring (clears on refresh)
- -- Score per asteroid is inversely proportional to size (smaller==harder==more points)
+  - Single-session scoring (clears on refresh)
+  - Score per asteroid is inversely proportional to size (smaller==harder==more points)
 - Program will randomly generate a sheid, which equals one life.
 - User can also change the setting of sound, speed of the rocket
 
