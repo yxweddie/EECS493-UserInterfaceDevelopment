@@ -1,5 +1,4 @@
 ## DV BLASTER v1.0
-## ----------------
 
 This code is the basis for a simple 'asteroid blaster' game. It has the
 following functionality:
@@ -14,9 +13,9 @@ following functionality:
 
 ## CONTROLS
 
-Arrow-Keys: move ship
-Spacebar: fire rocket
-Shift: spawn one additional asteroid
+- Arrow-Keys: move ship
+- Spacebar: fire rocket
+- Shift: spawn one additional asteroid
 
 ## Implementation
 
