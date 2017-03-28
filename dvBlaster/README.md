@@ -17,10 +17,10 @@ following functionality:
 - Spacebar: fire rocket
 - Shift: spawn one additional asteroid
 
-## Implementation
+## IMPLEMENTATION
 
 All code is done by the client site JavaScript
 
-## Usage
+## USAGE
 
 open the index.html and enjoy this simple game
